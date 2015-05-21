@@ -1,0 +1,15 @@
+
+%h1 All Users
+
+%table#users
+	%thead
+		%tr
+		%th Name
+		%th Password
+		%th Type
+	%tbody
+	- @users.each do |t|
+		%tr
+			%td= t.username
+			%td= t.password
+			%td= t.user_type
